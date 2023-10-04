@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Exercícios</title>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center">JavaScript - Exs</h1>
+
+    <div class="my-5 container border border-dark rounded-2 col-md-12 text-center p-3">
+        <h2>1. Escreva um script que sorteie cinco números entre 0 e 100. Exibir esses números bem como a quantidade de
+            números maiores que 10.</h2>
+        <button class="btn btn-primary" id="btnEx1">Sortear Números</button>
+        <h2 class="text-secondary" id="numerosSorteados"></h2>
+        <h3 class="text-secondary" id="maioresQue10"></h3>
+    </div>
+
+    <div class="my-5 container  border border-dark rounded-2 col-md-12 text-center p-3">
+        <h2>2. Escrever um script que sorteie dez números entre 0 e 100. Faça: exibir os números sorteados; calcular e
+            exibir a média desses números; exibir novamente, os números que são superiores à média</h2>
+        <button class="btn btn-primary" id="btnEx2">Sortear Números</button>
+        <h2 class="text-secondary" id="numerosSorteados2"></h2>
+        <h3 class="text-secondary" id="media"></h3>
+        <h3 class="text-secondary" id="maiorQueMedia"></h3>
+    </div>
+
+    <div class="my-5 container  border border-dark rounded-2 col-md-12 text-center p-3">
+        <h2>3. Faça um script que sorteie um número entre 0 e 500. Exiba o número na tela e informe se este número está
+            no intervalo entre 100 e 300. </h2>
+        <button class="btn btn-primary" id="btnEx3">Sortear Números</button>
+        <h2 class="text-secondary" id="numeroSorteado"></h2>
+        <h3 class="text-secondary" id="intervalo"></h3>
+    </div>
+
+    <div class="my-5 container  border border-dark rounded-2 col-md-12 text-center p-3">
+        <h2>4. Escreva um script que leia um peso na Terra e o número de um planeta e imprima o valor do seu peso neste
+            planeta. (consultar arquivo para número de planeta e fórmula)</h2>
+        <form>
+            <div class="row">
+                <div class="mb-3 col-md-6">
+                    <input type="text" class="form-control" id="peso" placeholder="Peso na Terra">
+                </div>
+                <div class="mb-3 col-md-6">
+                    <input type="text" class="form-control" id="planeta" placeholder="Planeta">
+                </div>
+            </div>
+            <button type="submit" id="calcular" class="btn btn-primary">Calcular</button>
+        </form>
+        <h3 class="text-secondary" class="my-3" id="pesoNovo"></h3>
+    </div>
+    
+    <div class="my-5 container  border border-dark rounded-2 col-md-12 text-center p-3">
+        <h2>5. Um determinado banco está concedendo um Crédito Especial aos seus clientes, variável de acordo com o
+            saldo médio no último ano. Faça um script onde o usuário entre com seu saldo médio e calcule o valor do crédito de acordo com a tabela (arquivo). Exibir na tela as seguintes informações: </h2>
+            <h2> Saldo Médio - Percentual de Crédito - Valor de Crédito Especial. </h2>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="saldoMedio" placeholder="Saldo médio">
+                </div>
+                <button type="submit" id="calcularCredito" class="btn btn-primary">Calcular crédito</button>
+            </form>
+            
+            <h3 class="text-secondary" id="saldo"></h3>
+            <h3 class="text-secondary" id="percentual"></h3>
+            <h3 class="text-secondary" id="creditoEspecial"></h3>
+    </div>
+        
+        <div class="my-5 container  border border-dark rounded-2 col-md-12 text-center p-3">
+            <h2>6. O índice de massa corpórea (IMC) é calculado a partir da seguinte fórmula:</h2>
+            <h2>   IMC = Peso (kg) / Altura*Altura
+            <h2>    Monte um script para o usuário entrar com seu respectivo peso e altura. Após isso o script deverá calcular o IMC da
+                pessoa e exibir uma das mensagens na tabela (arquivo)</h2>
+                
+            <form>
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <input type="text" class="form-control" id="pesoIMC" placeholder="Peso">
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <input type="text" class="form-control" id="alturaIMC" placeholder="Altura">
+                    </div>
+                </div>
+                <button type="submit" id="calcularIMC" class="btn btn-primary">Calcular IMC</button>
+            </form>
+            <h3 class="text-secondary" class="my-3" id="pesoNovoIMC"></h3>
+        </div>
+        
+        <div class="my-5 container  border border-dark rounded-2 col-md-12 text-center p-3">
+            <h2>7. Monte um script onde você entre com um valor em MegaBytes e seja exibido o valor em bytes</h2>
+                
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="valorMegaByte" placeholder="Valor em Megabytes">
+                </div>
+                <button type="submit" id="calcularByte" class="btn btn-primary">Calcular valor em bytes</button>
+            </form>
+            <h3 class="text-secondary" class="my-3" id="valorByte"></h3>
+        </div>
+
+        <div class="my-5 container  border border-dark rounded-2 col-md-12 text-center p-3">
+            <h2>8. Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".</h2> 
+            <h2>Digite sim para resposta positiva ou não para resposta negativa.</h2>
+            <form>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <input type="text" class="form-control" id="resposta1" placeholder="Telefonou para a vítima?">
+                    </div>
+                    <div class="mb-3 col-md-4">
+                        <input type="text" class="form-control" id="resposta2" placeholder="Esteve no local do crime?">
+                    </div>
+                    <div class="mb-3 col-md-4">
+                        <input type="text" class="form-control" id="resposta3" placeholder="Mora perto da vítima?">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <input type="text" class="form-control" id="resposta4" placeholder="Devia para a vítima?">
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <input type="text" class="form-control" id="resposta5" placeholder="Já trabalhou com a vítima?">
+                    </div>
+                </div>
+                <button type="submit" id="btnRespostas" class="btn btn-primary">Ver resultado</button>
+            </form>
+            <h3 class="text-secondary" class="my-3" id="resultado"></h3>
+        </div>
+
+        <div class="my-5 container  border border-dark rounded-2 col-md-12 text-center p-3">
+            <h2>9. Faça um script que peça quatro notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua média. A atribuição de conceitos obedece à tabela no arquivo</h2> 
+            <form>
+                <div class="row">
+                    <div class="mb-3 col-md-3">
+                        <input type="text" class="form-control" id="nota1" placeholder="Primeira nota">
+                    </div>
+                    <div class="mb-3 col-md-3">
+                        <input type="text" class="form-control" id="nota2" placeholder="Segunda nota">
+                    </div>
+                    <div class="mb-3 col-md-3">
+                        <input type="text" class="form-control" id="nota3" placeholder="Terceira nota">
+                    </div>
+                    <div class="mb-3 col-md-3">
+                        <input type="text" class="form-control" id="nota4" placeholder="Quarta nota">
+                    </div>
+                </div>
+                <button type="submit" id="btnNota" class="btn btn-primary">Ver resultado</button>
+            </form>
+            <h3 class="text-secondary" class="my-3" id="notas"></h3>
+            <h3 class="text-secondary" class="my-3" id="mediaNotas"></h3>
+            <h3 class="text-secondary" class="my-3" id="conceitoNotas"></h3>
+            <h3 class="text-secondary" class="my-3" id="mensagemNotas"></h3>
+        </div>
+
+        <div class="my-5 container  border border-dark rounded-2 col-md-12 text-center p-3">
+            <h3>10- Um hotel cobra R$ 360.00 a diária e mais uma taxa de serviços. A taxa de serviços é de: </h3>
+            <h2>   R$ 35.50 por diária, se o número de diárias for maior que 15; </h2> 
+            <h2>     R$ 46.00 por diária, se o número de diárias for igual a 15;</h2> 
+            <h2>   R$ 58.00 por diária, se o número de diárias for menor que 15. </h2> 
+            <h2> Construa um script que mostre o total da taxa de serviço, o total de dias e o total geral da conta do cliente. </h2>
+                
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="numeroDiarias" placeholder="Numero de diárias">
+                </div>
+                <button type="submit" id="btnDiaria" class="btn btn-primary">Calcular</button>
+            </form>
+            <h3 class="text-secondary" class="my-3" id="taxaServico"></h3>
+            <h3 class="text-secondary" class="my-3" id="totalDias"></h3>
+            <h3 class="text-secondary" class="my-3" id="totalGeral"></h3>
+        </div>
+
+
+
+    <script src="./js/ex1.js"></script>
+    <script src="./js/ex2.js"></script>
+    <script src="./js/ex3.js"></script>
+    <script src="./js/ex4.js"></script>
+    <script src="./js/ex5.js"></script>
+    <script src="./js/ex6.js"></script>
+    <script src="./js/ex7.js"></script>
+    <script src="./js/ex8.js"></script>
+    <script src="./js/ex9.js"></script>
+    <script src="./js/ex10.js"></script>
+
+</body>
+
+</html>
